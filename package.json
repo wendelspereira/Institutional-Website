@@ -1,0 +1,37 @@
+{
+  "name": "cartorio-model",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ./components/** ./pages/** -c .eslintrc.json --ext js,jsx",
+    "lint-fix": "eslint ./components/** ./pages/** -c .eslintrc.json --fix --ext js,jsx"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@googlemaps/react-wrapper": "^1.1.21",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/lab": "^5.0.0-alpha.64",
+    "@mui/material": "^5.2.8",
+    "google-map-react": "^2.1.10",
+    "install": "^0.13.0",
+    "next": "^12.0.9-canary.0",
+    "nextjs-progressbar": "^0.0.13",
+    "nodemailer": "^6.7.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-google-recaptcha": "^2.1.0"
+  },
+  "devDependencies": {
+    "@unform/core": "^2.1.6",
+    "@unform/web": "^2.1.6",
+    "eslint": "7",
+    "eslint-config-next": "12.0.2",
+    "sass": "^1.43.4",
+    "yup": "^0.32.11"
+  }
+}

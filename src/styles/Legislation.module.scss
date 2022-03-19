@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 85rem;
+    padding: 3rem;
+
+    .moboIndice {
+      display: none;
+      margin: 0;
+    }
+    .layout {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      max-width: 85rem;
+      .divider {
+        margin-right: 2.5rem;
+      }
+      .moboIndice {
+        display: inline;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .content {
+      .layout {
+        .indice {
+          display: none;
+        }
+        .divider {
+          display: none;
+        }
+      }
+    }
+    .content {
+      .moboIndice {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+    }
+  }
+}

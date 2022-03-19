@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    max-width: 64rem;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+        color: var(--text-primary);
+        max-width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    p {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 1.25rem;
+        width: 90%;
+        color: var(--text-secondary);
+    }
+
+    @media (max-width: 1024px) {
+        span {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        span {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            width: 100%;
+        }
+
+        p {
+            font-size: 0.75rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

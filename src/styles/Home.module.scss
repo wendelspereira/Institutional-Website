@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    padding: 7rem 5rem 5rem;
+    > main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 6rem;
+        > section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 64rem;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        padding: 5rem 4rem 3rem;
+        main {
+            gap: 3.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 3rem 2rem 2rem;
+        main {
+            gap: 2.5rem;
+        }
+    }
+
+    @media (max-width: 450px) {
+        padding: 3rem 2rem 2rem;
+        main {
+            gap: 1.5rem;
+        }
+    }
+}

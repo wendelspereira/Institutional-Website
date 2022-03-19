@@ -1,0 +1,51 @@
+.container {
+    table {
+        background-color: var(--white);
+        border: solid 1px var(--brand-tertiary);
+    }
+        
+    table,
+    thead,
+    th,
+    tr,
+    td {
+        border-bottom: solid 1px var(--brand-tertiary);
+        border-collapse: collapse;
+        padding: 0.1rem;
+        text-align: center;
+    }
+
+    th {
+        color: var(--white);
+        background-color: var(--brand-tertiary);
+        text-align: flex-start;
+        font-size: 1rem;
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+        padding: 0.5rem 0.5rem;
+    }
+
+    td {
+        color: var(--text-primary);
+        font-size: 1rem;
+        font-family: "Inter", sans-serif;
+    }
+
+    @media (max-width: 1024px) {
+        th {
+            font-size: 1.075rem;
+        }
+        td {
+            font-size: 0.9rem;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        th {
+            font-size: 0.75rem;
+        }
+        td {
+            font-size: 0.6rem;
+        }
+    }
+}
